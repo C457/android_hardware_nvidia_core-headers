@@ -220,6 +220,11 @@ typedef NvS32 NvSPtr;
 #error Unknown compiler
 #endif
 
+/** Disable NV_DEBUG **/
+#ifndef NV_DEBUG
+#define NV_DEBUG 0
+#endif
+
 /**
  * This macro wraps its argument with the equivalent of "#if NV_DEBUG", but
  * also can be used where "#ifdef"'s can't, like inside a macro.
